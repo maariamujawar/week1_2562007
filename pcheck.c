@@ -28,7 +28,7 @@ int main(){
     char exp[MAX];
     int i,flag=1;
     printf("Enter expression: ");
-    gets(exp);
+    fgets(exp, MAX,stdin);
     for(i=0; exp[i] !='\0'; i++){
         if (exp[i]== '(' || exp[i]== '{' || exp[i]== '['){
             push(exp[i]);
